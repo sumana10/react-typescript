@@ -4,8 +4,8 @@ type GreetProps = {
   messageCount?: number,
   isLoggedIn: boolean
 }
-export default function Greet({name, messageCount, isLoggedIn}:GreetProps) {
-  const {messageCount = 0} = props
+export default function Greet({name, messageCount = 0, isLoggedIn}:GreetProps) {
+  // const {messageCount = 0} = props
   return (
     <div>
       <h1>{
